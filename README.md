@@ -62,10 +62,13 @@ If there is the desire to install the full demo stack the addtional tools/accoun
 This section covers the simple configuration for the deployment of the Beacon demo application. 
 
 
+### *Beacon*
+
+A simple workflow view of signing up for subscribing to Beacon can be seen [here](files/Beacon_Sub.pdf)
+
 ### *DataDog*
 
-##### TODO - DataDog
-
+To deploy 
 ### *cBIG-IP*
 
 The deployment environment used for development is coovered in detail [F5 SRE Demo](https://github.com/merps/f5-sre-demo),
@@ -125,6 +128,7 @@ deployment example covered in the [F5 SRE Demo](https://github.com/merps/f5-sre-
 
 
 ### Beacon
+
 
 ##### TODO - Beacon
 
