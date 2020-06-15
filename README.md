@@ -64,7 +64,7 @@ This section covers the simple configuration for the deployment of the Beacon de
 
 ### *Beacon*
 
-A simple workflow view of signing up for subscribing to Beacon can be seen [here](files/Beacon_Sub.pdf)
+To see how easy it is to sign up for both a F5 CloudServices Account and subscribe to Beacon refer to this [PDF](files/Beacon_Sub.pdf)
 
 ### *DataDog*
 
