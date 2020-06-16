@@ -46,7 +46,7 @@ To support this deployment pattern the following components are required:
     * [F5 Application Services v3 (AS3)](https://clouddocs.f5.com/products/extensions/f5-appsvcs-extension/latest/)
     * [F5 Telemetry Streaming (TS)](https://clouddocs.f5.com/products/extensions/f5-telemetry-streaming/latest/)
 * [Postman](https://www.postman.com/)
-* 
+
 
 ***Optional***
 
