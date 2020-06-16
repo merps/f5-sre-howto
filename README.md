@@ -79,10 +79,10 @@ F5 Beacon is a Cloud Services SaaS offering that provides both insights and anay
 provides a greater understanding of Beacon's current capabilites.
 
 Also, as it coincides with this demo Beacon also has a 45 free day trial period so you may use and explore how Beacon provides insights to 
-organisational needs.
+organisational needs. To see how easy it is to sign up for both a F5 CloudServices Account and subscribe to Beacon refer to this [PDF](files/Beacon_Sub.pdf)
 
-To see how easy it is to sign up for both a F5 CloudServices Account and subscribe to Beacon refer to this [PDF](files/Beacon_Sub.pdf)
-
+[Work with F5 Beacon](https://clouddocs.f5.com/cloud-services/latest/f5-cloud-services-Beacon-WorkWith.html) to explore many addtional resources outside of 
+this SRE Demo HowTo.
 
 ### *DataDog*
 
@@ -235,14 +235,14 @@ The configuration component is divided into two sections, [Docker Agent](http://
 
 ### Beacon
 
+The deployment of the WordPress NGINX+ Docker example is documented and deployed with use of the deployment pattern as described within [F5 SRE Demo](https://github/merps/f5-sre-demo) where the application is deployed via API.
 
-##### application deployment
+For the purpose of this HowTo, it will use the [F5 Beacon API](https://clouddocs.f5.com/cloud-services/latest/f5-cloud-services-Beacon-API.html) Postman collection 
 
 
 ### NGINX+ 
 
-
-#### Todo - syslogs
+For both ease and simplicity, this section builds upon the Docker deployment with the use of a docker-compose, this detailed in [wordpress-nginx-docker-compose](https://github.com/merps/wordpress-nginx-docker-compose)
 
 
 # Usage
@@ -261,9 +261,9 @@ The configuration component is divided into two sections, [Docker Agent](http://
 
 List of task to make the process my automated;
 
-- [ ] Create workflow for Jenkins/GitLab to deploy dashboard
+- [ ] Push updated SRE code as per Docker Compose refactor
 - [ ] Workflow improvements for DO/AS3/TS
-- [ ] Usage Instructions(?)
+- [ ] Quick Snippets for Docker Compose Spin Up.
 
 ## Contributing
 
@@ -271,7 +271,11 @@ See [the contributing file](CONTRIBUTING.md)!
 
 PRs accepted.
 
-### Any optional sections
+### ChangeLog
+
+**2020-06-16**
+
+- Initial merge to [f5devcentral](https://github.com/f5devcentral/f5-bd-sre-demo) from [F5-SRE-HowTo](https://github.com/merps/f5-sre-howto)
 
 ## License
 
