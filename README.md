@@ -83,11 +83,13 @@ organisational needs.
 
 To see how easy it is to sign up for both a F5 CloudServices Account and subscribe to Beacon refer to this [PDF](files/Beacon_Sub.pdf)
 
+
 ### *DataDog*
 
 Explore your stack with a free [Datadog trial](https://www.datadoghq.com/free-datadog-trial/), try Datadog for 14 days and learn how seamlessly uniting metrics, traces, and logs in one platform improves agility, increases efficiency, and provides end-to-end visibility across your entire stack.
 
 DataDog insights and metrics are used in combination with NGINX+ provides logs and metrics of the instances used in this demo.
+
 
 ### *BIG-IP*
 
@@ -132,16 +134,16 @@ terraform apply --vars-file ../variables.tfvars
 > **_NOTE:_**  This architecture deploys two c4.2xlage PAYG BIG-IP Marketplace instances, it is 
 recommended to perform a `terraform destroy` to not incur excessive usage costs outside of free tier.
 
-
 This deployment also covers the provisioning of the additional F5 prerequeset components so required for 
 deployment example covered in the [F5 SRE Demo](https://github.com/merps/f5-sre-demo)
 
 
 ### *NGINX*
 
+As with the installation of BIG-IP, this HowTo is based on that deployment. To replicate this deployment please 
+refer to the well documented process of [Deploying NGINX and NGINX Plus on Docker](https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-docker/) otherwise the steps outined in the [Configuration](#configuration) section outline what is required for a WordPress 
 
-##### TODO - NGINX
-
+As with other products and services, NGINX+ also offers a free license period that you can request [here](https://www.nginx.com/free-trial-request/ "Trial Request") where you can also trial additional modules of NGNIX+
 
 
 ## Configuration
@@ -228,8 +230,7 @@ As previously, steps to configure;
 
 ### DataDog
 
-
-##### Todo - Agent installation
+The configuration component is divided into two sections, [Docker Agent](http://docs.datadoghq.com/agent/docker) and the associated metrics. 
 
 
 ### Beacon
