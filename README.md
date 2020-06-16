@@ -38,18 +38,19 @@ like to be explored, this will cover just the steps required to complete configu
 
 To support this deployment pattern the following components are required:
 
+* [F5 CloudServices Portal](https://portal.cloudservices.f5.com/) Account
+* [DataDog](https://www.datadoghq.com/free-datadog-trial/) Account
 * F5 BIP-IP (physical or VE)
 * NGINX+ Instance
-* [DataDog](https://www.datadoghq.com/free-datadog-trial/) Account.
 * F5 Toolchain Components:
     * [F5 Application Services v3 (AS3)](https://clouddocs.f5.com/products/extensions/f5-appsvcs-extension/latest/)
     * [F5 Telemetry Streaming (TS)](https://clouddocs.f5.com/products/extensions/f5-telemetry-streaming/latest/)
 * [Postman](https://www.postman.com/)
-* [F5 CloudServices Portal](https://portal.cloudservices.f5.com/) Account
+* 
 
 ***Optional***
 
-If there is the desire to install the full demo stack the addtional tools/accounts are suggested:
+If there is the desire to install the full demo stack the additional tools/accounts are suggested:
 
 * [Terraform CLI](https://www.terraform.io/docs/cli-index.html)
 * [git](https://git-scm.com/)
@@ -59,17 +60,32 @@ If there is the desire to install the full demo stack the addtional tools/accoun
 
 ## Installation 
 
-This section covers the simple configuration for the deployment of the Beacon demo application. 
+This section covers the configuration for the deployment of the example application as demostrated in the recent
+Beacon webinar.  This flow is built around the assumed deployment pattern that is similar to [F5-SRE-Demo](https://github.com/merps/f5-sre-demo),
+the additional steps required for that deployment to replicate the webinar environment are detailed in this HowTo.
+
+Intially the sign-up for both F5 CloudServices and DataDog Trial account for the purpose of testing is covered here in this section,  DataDog
+Agents are a technical requirement at time of writing as Telemetry Streaming is not support with NGINX+.
 
 
 ### *Beacon*
+
+F5 Beacon is a Cloud Services SaaS offering that provides both insights and anayltics, this [demonstration](https://youtu.be/j81wsUgwFFI) video
+provides a greater understanding of Beacon's current capabilites.
+
+Also, as it coincides with this demo Beacon also has a 45 free day trial period so you may use and explore how Beacon provides insights to 
+organisational needs.
 
 To see how easy it is to sign up for both a F5 CloudServices Account and subscribe to Beacon refer to this [PDF](files/Beacon_Sub.pdf)
 
 ### *DataDog*
 
-To deploy 
-### *cBIG-IP*
+Explore your stack with a free Datadog trial, try Datadog for 14 days and learn how seamlessly uniting metrics, traces, and logs in one platform improves agility, increases efficiency, and provides end-to-end visibility across your entire stack.
+
+
+https://www.datadoghq.com/free-datadog-trial/
+
+### *BIG-IP*
 
 The deployment environment used for development is coovered in detail [F5 SRE Demo](https://github.com/merps/f5-sre-demo),
 this is a AWS Deployment example of AutoScaling AWAF. For simplicity, steps replicate this deployment are as follows;
@@ -126,20 +142,12 @@ deployment example covered in the [F5 SRE Demo](https://github.com/merps/f5-sre-
 
 ## Configuration
 
-
-### Beacon
-
-
-##### TODO - Beacon
-
 ### F5 cBIG-IP
 
 As with DataDog, detailed instructions for the deployment and configuration for TS is located at 
 [F5 Telemetry Streaming](https://clouddocs.f5.com/products/extensions/f5-telemetry-streaming/latest/).
 
 As previously, steps to configure;
-
-##### TODO - DataDog
 
 1. Update TS declations as this example example;
 
@@ -213,13 +221,36 @@ As previously, steps to configure;
 3. Push updated TS declaration to cBIG-IP.
 
 
+
+### DataDog
+
+
+##### Todo - Agent installation
+
+
+### Beacon
+
+
+##### application deployment
+
+
+### NGINX+ 
+
+
+#### Todo - syslogs
+
+
 # Usage
+
 
 ### As per TODO 
 
+
 ## API
 
+
 ### As per TODo
+
 
 ## TODO
 
