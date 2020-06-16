@@ -15,9 +15,13 @@ This document covers the initial setup and configuration of the SRE Demo as demo
 - [Installation](#installation)
     - [Beacon](#beacon)
     - [DataDog](#datadog)
-    - [cBIG-IP](#cbig-ip)
+    - [BIG-IP](#big-ip)
     - [NGINX+](#ngnix)
 - [Configuration](#configuration)
+    - [Beacon](#beacon)
+    - [DataDog](#datadog)
+    - [BIG-IP](#big-ip)
+    - [NGINX+](#ngnix)
 - [Usage](#usage)
 - [API](#api)
 - [Contributing](#contributing)
@@ -62,7 +66,8 @@ If there is the desire to install the full demo stack the additional tools/accou
 
 This section covers the configuration for the deployment of the example application as demostrated in the recent
 Beacon webinar.  This flow is built around the assumed deployment pattern that is similar to [F5-SRE-Demo](https://github.com/merps/f5-sre-demo),
-the additional steps required for that deployment to replicate the webinar environment are detailed in this HowTo.
+the additional steps required for that deployment to replicate the webinar environment are contained in the [Configuration](#configuration) 
+section of this HowTo.
 
 Intially the sign-up for both F5 CloudServices and DataDog Trial account for the purpose of testing is covered here in this section,  DataDog
 Agents are a technical requirement at time of writing as Telemetry Streaming is not support with NGINX+.
@@ -80,10 +85,9 @@ To see how easy it is to sign up for both a F5 CloudServices Account and subscri
 
 ### *DataDog*
 
-Explore your stack with a free Datadog trial, try Datadog for 14 days and learn how seamlessly uniting metrics, traces, and logs in one platform improves agility, increases efficiency, and provides end-to-end visibility across your entire stack.
+Explore your stack with a free [Datadog trial](https://www.datadoghq.com/free-datadog-trial/), try Datadog for 14 days and learn how seamlessly uniting metrics, traces, and logs in one platform improves agility, increases efficiency, and provides end-to-end visibility across your entire stack.
 
-
-https://www.datadoghq.com/free-datadog-trial/
+DataDog insights and metrics are used in combination with NGINX+ provides logs and metrics of the instances used in this demo.
 
 ### *BIG-IP*
 
@@ -142,7 +146,7 @@ deployment example covered in the [F5 SRE Demo](https://github.com/merps/f5-sre-
 
 ## Configuration
 
-### F5 cBIG-IP
+### BIG-IP
 
 As with DataDog, detailed instructions for the deployment and configuration for TS is located at 
 [F5 Telemetry Streaming](https://clouddocs.f5.com/products/extensions/f5-telemetry-streaming/latest/).
