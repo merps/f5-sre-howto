@@ -72,10 +72,12 @@ F5 Beacon is a Cloud Services SaaS offering that provides both insights and anal
 provides a greater understanding of Beacon's current capabilities.
 
 Also, as it coincides with this demo Beacon also has a 45 free day trial period so you may use and explore how Beacon provides insights to 
-organisational needs. To see how easy it is to sign up for both a F5 CloudServices Account and subscribe to Beacon refer to this [PDF](files/Beacon_Sub.pdf)
+organisational needs. 
 
-[Work with F5 Beacon](https://clouddocs.f5.com/cloud-services/latest/f5-cloud-services-Beacon-WorkWith.html) to explore many additional resources outside of 
-this SRE Demo How To.
+[Work with F5 Beacon](https://clouddocs.f5.com/cloud-services/latest/f5-cloud-services-Beacon-WorkWith.html) to explore many additional resources outside of this SRE Demo How To.
+
+Sign up for you trial Beacon account, along with other F5 Cloud Services offerings at [F5 Cloud Services](https://https://portal.cloudservices.f5.com/)
+
 
 ### *DataDog*
 
