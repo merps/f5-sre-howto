@@ -79,7 +79,7 @@ provides a greater understanding of Beacon's current capabilities.
 Also, as it coincides with this demo Beacon also has a 45 free day trial period so you may use and explore how Beacon provides insights to 
 organisational needs. 
 
-The [Beacon Getting Started Guide](https://f5.com/beacon-get-started) will provide a good starting point, [Work with F5 Beacon](https://clouddocs.f5.com/cloud-services/latest/f5-cloud-services-Beacon-WorkWith.html) to explore many additional resources.
+The [Beacon Getting Started Guide](https://f5.com/beacon-get-started) will provide a good starting point, [work with F5 Beacon](https://clouddocs.f5.com/cloud-services/latest/f5-cloud-services-Beacon-WorkWith.html) to explore many additional resources.
 
 Sign up for you trial Beacon account, along with other F5 Cloud Services offerings at [F5 Cloud Services](https://portal.cloudservices.f5.com/)
 
