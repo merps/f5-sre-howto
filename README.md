@@ -1,6 +1,6 @@
 # F5 Beacon SRE Demo
 
-[![license](https://img.shields.io/github/license/:merps/:f5-ts-sumo.svg)](LICENSE)
+[![license](https://img.shields.io/github/license/merps/f5-sre-howto)](LICENSE)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
 This document covers the initial setup and configuration of the SRE Demo as demonstrated on the most recent webinar.
@@ -66,6 +66,11 @@ section of this How To.
 Initially the sign-up for both F5 CloudServices and DataDog Trial account for the purpose of testing is covered here in this section, DataDog
 Agents are a technical requirement at time of writing as Telemetry Streaming is not support with NGINX+.
 
+The deployment architecture is deployed as a Auto Scaling AWAF Instances as indicated in the diagram below;
+
+![](images/config-diagram-autoscale-ltm.png)
+
+
 ### *Beacon*
 
 F5 Beacon is a Cloud Services SaaS offering that provides both insights and analytics, this [demonstration](https://youtu.be/j81wsUgwFFI) video
@@ -76,7 +81,7 @@ organisational needs.
 
 [Work with F5 Beacon](https://clouddocs.f5.com/cloud-services/latest/f5-cloud-services-Beacon-WorkWith.html) to explore many additional resources outside of this SRE Demo How To.
 
-Sign up for you trial Beacon account, along with other F5 Cloud Services offerings at [F5 Cloud Services](https://https://portal.cloudservices.f5.com/)
+Sign up for you trial Beacon account, along with other F5 Cloud Services offerings at [F5 Cloud Services](https://portal.cloudservices.f5.com/)
 
 
 ### *DataDog*
@@ -146,7 +151,7 @@ As previously, steps to configure;
 
 1. Update TS declarations as this example;
 
-```
+```json
 {
     "class": "Telemetry",
     "TS_System": {
@@ -215,10 +220,7 @@ As previously, steps to configure;
         ],
         "passphrase":{ 
             "cipherText":"a-aacnmyWgmu#C9zyugUVIZ4ywhhGSKh2o5BoZ3g12ZB1GJdhvW2yOIU="
-        }
     }
-    "schemaVersion": "1.6.0"    
-}: "1.6.0" 
 }
 ```
 3. Push updated TS declaration to BIG-IP.
