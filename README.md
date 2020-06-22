@@ -232,7 +232,7 @@ The configuration component is divided into two sections, [Docker Agent](http://
 
 ### Beacon
 
-The deployment of the WordPress NGINX+ Docker example is documented and deployed with use of the deployment pattern as described within [F5 SRE Demo](https://github/merps/f5-sre-demo) where the application is deployed via API.
+The deployment of the WordPress NGINX+ Docker example is documented and deployed with use of the deployment pattern as described within [F5 SRE Demo](https://github.com/merps/f5-sre-demo) where the application is deployed via API.
 
 For the purpose of this How To, it will use the [F5 Beacon API](https://clouddocs.f5.com/cloud-services/latest/f5-cloud-services-Beacon-API.html) Postman collection 
 
