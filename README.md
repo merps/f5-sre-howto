@@ -219,7 +219,7 @@ As previously, steps to configure;
            }
         ],
         "passphrase":{ 
-            "cipherText":"a-aacnmyWgmu#C9zyugUVIZ4ywhhGSKh2o5BoZ3g12ZB1GJdhvW2yOIU="
+            "cipherText":"<this is the secret>"
     }
 }
 ```
